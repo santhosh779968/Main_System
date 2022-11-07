@@ -1,0 +1,256 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "EmployeeDataOperations",
+    "description" : "EmployeeDataOperations service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/InsertEmpAddress" : {
+      "post" : {
+        "summary" : "postEmployeeDataOperations",
+        "description" : "postEmployeeDataOperations",
+        "operationId" : "post-InsertEmpAddress",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertEmpAddress"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertInsuranceDetails" : {
+      "post" : {
+        "summary" : "postEmployeeDataOperations",
+        "description" : "postEmployeeDataOperations",
+        "operationId" : "post-InsertInsuranceDetails",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertInsuranceDetails"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertEmpProfData" : {
+      "post" : {
+        "summary" : "postEmployeeDataOperations",
+        "description" : "postEmployeeDataOperations",
+        "operationId" : "post-InsertEmpProfData",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/EmployeeProfDataReq"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertDataIntoMainTable" : {
+      "get" : {
+        "summary" : "getEmployeeDataOperations",
+        "description" : "getEmployeeDataOperations",
+        "operationId" : "get-InsertDataIntoMainTable",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertEmployeeSalary" : {
+      "post" : {
+        "summary" : "postEmployeeDataOperations",
+        "description" : "postEmployeeDataOperations",
+        "operationId" : "post-InsertEmployeeSalary",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertEmpSalary"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/EmpOrgDetails" : {
+      "post" : {
+        "summary" : "postEmployeeDataOperations",
+        "description" : "postEmployeeDataOperations",
+        "operationId" : "post-EmpOrgDetails",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertOrgDetails"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "InsertEmpAddress" : {
+      "type" : "object",
+      "required" : [ "HouseNumber", "State", "Street", "City", "EmpID", "EmpName" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "string"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "HouseNumber" : {
+          "type" : "string"
+        },
+        "Street" : {
+          "type" : "string"
+        },
+        "City" : {
+          "type" : "string"
+        },
+        "State" : {
+          "type" : "string"
+        }
+      }
+    },
+    "InsertOrgDetails" : {
+      "type" : "object",
+      "required" : [ "Branch", "OrganisationName", "EmpID" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "integer"
+        },
+        "OrganisationName" : {
+          "type" : "string"
+        },
+        "Branch" : {
+          "type" : "string"
+        }
+      }
+    },
+    "InsertInsuranceDetails" : {
+      "type" : "object",
+      "required" : [ "CoverageTill", "EmpID", "PolicyID" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "PolicyID" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "CoverageTill" : {
+          "type" : "string",
+          "format" : "date"
+        }
+      }
+    },
+    "EmployeeProfDataReq" : {
+      "type" : "object",
+      "required" : [ "Designation", "EmpID", "EmployeeName" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "string"
+        },
+        "EmployeeName" : {
+          "type" : "string"
+        },
+        "Designation" : {
+          "type" : "string"
+        }
+      }
+    },
+    "InsertDataResposnse" : {
+      "type" : "object",
+      "required" : [ "Response" ],
+      "properties" : {
+        "Response" : {
+          "type" : "string"
+        }
+      }
+    },
+    "InsertEmpSalary" : {
+      "type" : "object",
+      "required" : [ "Salary", "EmpID" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "string"
+        },
+        "Salary" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

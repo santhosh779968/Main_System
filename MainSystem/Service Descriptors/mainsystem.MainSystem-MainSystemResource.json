@@ -1,0 +1,304 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "MainSystemResource",
+    "description" : "MainSystemResource service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/mainsystemresource" : {
+      "get" : {
+        "summary" : "getMainSystemResource",
+        "description" : "getMainSystemResource",
+        "operationId" : "get-mainsystemresource",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertPersonalData" : {
+      "post" : {
+        "summary" : "postMainSystemResource",
+        "description" : "postMainSystemResource",
+        "operationId" : "post-InsertPersonalData",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertPersonalData"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertProfData" : {
+      "post" : {
+        "summary" : "postMainSystemResource",
+        "description" : "postMainSystemResource",
+        "operationId" : "post-InsertProfData",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/EmployeeProfDataReq"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertEmployeeAddress" : {
+      "post" : {
+        "summary" : "postMainSystemResource",
+        "description" : "postMainSystemResource",
+        "operationId" : "post-InsertEmployeeAddress",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertEmpAddress"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertSalaryData" : {
+      "post" : {
+        "summary" : "postMainSystemResource",
+        "description" : "postMainSystemResource",
+        "operationId" : "post-InsertSalaryData",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertEmpSalary"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertInsuranceData" : {
+      "post" : {
+        "summary" : "postMainSystemResource",
+        "description" : "postMainSystemResource",
+        "operationId" : "post-InsertInsuranceData",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertInsuranceDetails"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    },
+    "/InsertEmpOrgDetsils" : {
+      "post" : {
+        "summary" : "postMainSystemResource",
+        "description" : "postMainSystemResource",
+        "operationId" : "post-InsertEmpOrgDetsils",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertOrgDetails"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a InsertDataResposnse to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InsertDataResposnse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "InsertEmpAddress" : {
+      "type" : "object",
+      "required" : [ "HouseNumber", "State", "Street", "City", "EmpID", "EmpName" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "string"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "HouseNumber" : {
+          "type" : "string"
+        },
+        "Street" : {
+          "type" : "string"
+        },
+        "City" : {
+          "type" : "string"
+        },
+        "State" : {
+          "type" : "string"
+        }
+      }
+    },
+    "InsertPersonalData" : {
+      "type" : "object",
+      "required" : [ "MaritalStatus", "PhoneNumber", "Gender", "EmpId", "Name" ],
+      "properties" : {
+        "EmpId" : {
+          "type" : "string"
+        },
+        "Name" : {
+          "type" : "string"
+        },
+        "Gender" : {
+          "type" : "string"
+        },
+        "MaritalStatus" : {
+          "type" : "string"
+        },
+        "PhoneNumber" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "InsertOrgDetails" : {
+      "type" : "object",
+      "required" : [ "Branch", "OrganisationName", "EmpID" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "integer"
+        },
+        "OrganisationName" : {
+          "type" : "string"
+        },
+        "Branch" : {
+          "type" : "string"
+        }
+      }
+    },
+    "InsertInsuranceDetails" : {
+      "type" : "object",
+      "required" : [ "CoverageTill", "EmpID", "PolicyID" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "PolicyID" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "CoverageTill" : {
+          "type" : "string",
+          "format" : "date"
+        }
+      }
+    },
+    "EmployeeProfDataReq" : {
+      "type" : "object",
+      "required" : [ "Designation", "EmpID", "EmployeeName" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "string"
+        },
+        "EmployeeName" : {
+          "type" : "string"
+        },
+        "Designation" : {
+          "type" : "string"
+        }
+      }
+    },
+    "InsertDataResposnse" : {
+      "type" : "object",
+      "required" : [ "Response" ],
+      "properties" : {
+        "Response" : {
+          "type" : "string"
+        }
+      }
+    },
+    "InsertEmpSalary" : {
+      "type" : "object",
+      "required" : [ "Salary", "EmpID" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "string"
+        },
+        "Salary" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

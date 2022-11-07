@@ -1,0 +1,85 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystemEmployeeData-EmployeeDataOperations.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    },
+    {
+        "jsonSchemaLocation": "/MainSystem/Service Descriptors/mainsystem.MainSystem-MainSystemResource.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/CommonResources/Schemas/Insert_Employee_Data.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
+    }
+]}

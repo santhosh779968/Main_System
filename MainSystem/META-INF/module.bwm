@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_I_GTkFnEEe2F5aYV-xU34g" targetNamespace="http://tns.tibco.com/bw/composite/MainSystem" name="MainSystem" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_pdeMwlwcEe2ckpkHA4rH-g" name="InsertPersonalData" promote="ComponentMainSystem/InsertPersonalData">
+    <sca:interface.wsdl xmi:id="_pdeMxlwcEe2ckpkHA4rH-g" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertPersonalData)" scaext:wsdlLocation="../Processes/mainsystem/MainSystem.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_pdn9wFwcEe2ckpkHA4rH-g" name="RestService" path="/InsertPersonalData" docBasePath="http://localhost:7777/MainSystem" docResourcePath="MainSystemResource" basePath="/" connector="commonresources.commonHTTPconnection" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/mainsystem.MainSystem-MainSystemResource.json">
+      <operation xmi:id="_pdxuwFwcEe2ckpkHA4rH-g" operationName="post" nickname="post-InsertPersonalData" httpMethod="POST" notes="postMainSystemResource" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_pg_a0FwcEe2ckpkHA4rH-g"/>
+      <advancedConfig xmi:id="_pdn9wVwcEe2ckpkHA4rH-g" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_pdxuwVwcEe2ckpkHA4rH-g" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_nY0usF4wEe2VIMKZkc0vSw" name="InsertEmployeeAddress" promote="ComponentMainSystem/InsertEmployeeAddress">
+    <sca:interface.wsdl xmi:id="_nZSBsF4wEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertEmployeeAddress)" scaext:wsdlLocation="../Processes/mainsystem/MainSystem.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_nZ9-MF4wEe2VIMKZkc0vSw" name="RestService7" path="/InsertEmployeeAddress" docBasePath="http://localhost:7777/MainSystem" docResourcePath="MainSystemResource" basePath="/" connector="commonresources.commonHTTPconnection" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/mainsystem.MainSystem-MainSystemResource.json">
+      <operation xmi:id="_naRgMF4wEe2VIMKZkc0vSw" operationName="post" nickname="post-InsertEmployeeAddress" httpMethod="POST" notes="postMainSystemResource" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_na4kMF4wEe2VIMKZkc0vSw"/>
+      <advancedConfig xmi:id="_nZ9-MV4wEe2VIMKZkc0vSw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_naRgMV4wEe2VIMKZkc0vSw" bindingName="RestService7"/>
+  </sca:service>
+  <sca:service xmi:id="_WyPGMl5MEe2VIMKZkc0vSw" name="InsertSalaryData" promote="ComponentMainSystem/InsertSalaryData">
+    <sca:interface.wsdl xmi:id="_WyPGNl5MEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertSalaryData)" scaext:wsdlLocation="../Processes/mainsystem/MainSystem.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_Wy-tEF5MEe2VIMKZkc0vSw" name="RestService8" path="/InsertSalaryData" docBasePath="http://localhost:7777/MainSystem" docResourcePath="MainSystemResource" basePath="/" connector="commonresources.commonHTTPconnection" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/mainsystem.MainSystem-MainSystemResource.json">
+      <operation xmi:id="_WzRoAF5MEe2VIMKZkc0vSw" operationName="post" nickname="post-InsertSalaryData" httpMethod="POST" notes="postMainSystemResource" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_W0K_4F5MEe2VIMKZkc0vSw"/>
+      <advancedConfig xmi:id="_Wy-tEV5MEe2VIMKZkc0vSw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_WzRoAV5MEe2VIMKZkc0vSw" bindingName="RestService8"/>
+  </sca:service>
+  <sca:service xmi:id="_DJFqcl5OEe2VIMKZkc0vSw" name="InsertEmpOrgDetsils" promote="ComponentMainSystem/InsertEmpOrgDetsils">
+    <sca:interface.wsdl xmi:id="_DJFqdl5OEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertEmpOrgDetsils)" scaext:wsdlLocation="../Processes/mainsystem/MainSystem.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_DJ_CUF5OEe2VIMKZkc0vSw" name="RestService9" path="/InsertEmpOrgDetsils" docBasePath="http://localhost:7777/MainSystem" docResourcePath="MainSystemResource" basePath="/" connector="commonresources.commonHTTPconnection" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/mainsystem.MainSystem-MainSystemResource.json">
+      <operation xmi:id="_DKR9QF5OEe2VIMKZkc0vSw" operationName="post" nickname="post-InsertEmpOrgDetsils" httpMethod="POST" notes="postMainSystemResource" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_DLLVIF5OEe2VIMKZkc0vSw"/>
+      <advancedConfig xmi:id="_DJ_CUV5OEe2VIMKZkc0vSw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_DKR9QV5OEe2VIMKZkc0vSw" bindingName="RestService9"/>
+  </sca:service>
+  <sca:service xmi:id="_ey2w4V5QEe2VIMKZkc0vSw" name="InsertInsuranceData" promote="ComponentMainSystem/InsertInsuranceData">
+    <sca:interface.wsdl xmi:id="_ey2w5V5QEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertInsuranceData)" scaext:wsdlLocation="../Processes/mainsystem/MainSystem.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_e0DDsF5QEe2VIMKZkc0vSw" name="RestService10" path="/InsertInsuranceData" docBasePath="http://localhost:7777/MainSystem" docResourcePath="MainSystemResource" basePath="/" connector="commonresources.commonHTTPconnection" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/mainsystem.MainSystem-MainSystemResource.json">
+      <operation xmi:id="_e0M0sF5QEe2VIMKZkc0vSw" operationName="post" nickname="post-InsertInsuranceData" httpMethod="POST" notes="postMainSystemResource" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_e1eAAF5QEe2VIMKZkc0vSw"/>
+      <advancedConfig xmi:id="_e0DDsV5QEe2VIMKZkc0vSw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_e0M0sV5QEe2VIMKZkc0vSw" bindingName="RestService10"/>
+  </sca:service>
+  <sca:service xmi:id="_RIqqEl5WEe2VIMKZkc0vSw" name="InsertProfData" promote="ComponentMainSystem/InsertProfData">
+    <sca:interface.wsdl xmi:id="_RI0bEl5WEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertProfData)" scaext:wsdlLocation="../Processes/mainsystem/MainSystem.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_RKKe4F5WEe2VIMKZkc0vSw" name="RestService11" path="/InsertProfData" docBasePath="http://localhost:7777/MainSystem" docResourcePath="MainSystemResource" basePath="/" connector="commonresources.commonHTTPconnection" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/mainsystem.MainSystem-MainSystemResource.json">
+      <operation xmi:id="_RKdZ0F5WEe2VIMKZkc0vSw" operationName="post" nickname="post-InsertProfData" httpMethod="POST" notes="postMainSystemResource" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_RMGYkF5WEe2VIMKZkc0vSw"/>
+      <advancedConfig xmi:id="_RKKe4V5WEe2VIMKZkc0vSw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_RKdZ0V5WEe2VIMKZkc0vSw" bindingName="RestService11"/>
+  </sca:service>
+  <sca:service xmi:id="_R8awUl5YEe2VIMKZkc0vSw" name="mainsystemresource" promote="ComponentMainSystem/mainsystemresource">
+    <sca:interface.wsdl xmi:id="_R8wHgl5YEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(mainsystemresource)" scaext:wsdlLocation="../Processes/mainsystem/MainSystem.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_R-i3QF5YEe2VIMKZkc0vSw" name="RestService12" path="/mainsystemresource" docBasePath="http://localhost:7777/MainSystem" docResourcePath="MainSystemResource" basePath="/" connector="commonresources.commonHTTPconnection" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/mainsystem.MainSystem-MainSystemResource.json">
+      <operation xmi:id="_R-soQF5YEe2VIMKZkc0vSw" operationName="get" nickname="get-mainsystemresource" httpMethod="GET" notes="getMainSystemResource" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_SBFN4F5YEe2VIMKZkc0vSw"/>
+      <advancedConfig xmi:id="_R-i3QV5YEe2VIMKZkc0vSw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_R-1yMF5YEe2VIMKZkc0vSw" bindingName="RestService12"/>
+  </sca:service>
+  <sca:property xmi:id="_J-abgFnEEe2F5aYV-xU34g" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_J-y2AFnEEe2F5aYV-xU34g" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_J_GYAFnEEe2F5aYV-xU34g" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_J_VokFnEEe2F5aYV-xU34g" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_J_pKkFnEEe2F5aYV-xU34g" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_J_8skFnEEe2F5aYV-xU34g" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KAQOkFnEEe2F5aYV-xU34g" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KAe4EFnEEe2F5aYV-xU34g" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KAyaEFnEEe2F5aYV-xU34g" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_TgYDUFwcEe2ckpkHA4rH-g" name="ComponentMainSystem" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_TgYDUVwcEe2ckpkHA4rH-g" processName="mainsystem.MainSystem"/>
+    <sca:service xmi:id="_pdeMwFwcEe2ckpkHA4rH-g" name="InsertPersonalData">
+      <sca:interface.wsdl xmi:id="_pdeMwVwcEe2ckpkHA4rH-g" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertPersonalData)" scaext:wsdlLocation="../Processes/mainsystem/MainSystem.bwp"/>
+    </sca:service>
+    <sca:service xmi:id="_nYq9sF4wEe2VIMKZkc0vSw" name="InsertEmployeeAddress">
+      <sca:interface.wsdl xmi:id="_nYv2MF4wEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertEmployeeAddress)"/>
+    </sca:service>
+    <sca:service xmi:id="_WyPGMF5MEe2VIMKZkc0vSw" name="InsertSalaryData">
+      <sca:interface.wsdl xmi:id="_WyPGMV5MEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertSalaryData)"/>
+    </sca:service>
+    <sca:service xmi:id="_DJFqcF5OEe2VIMKZkc0vSw" name="InsertEmpOrgDetsils">
+      <sca:interface.wsdl xmi:id="_DJFqcV5OEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertEmpOrgDetsils)"/>
+    </sca:service>
+    <sca:service xmi:id="_eys_4F5QEe2VIMKZkc0vSw" name="InsertInsuranceData">
+      <sca:interface.wsdl xmi:id="_ey2w4F5QEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertInsuranceData)"/>
+    </sca:service>
+    <sca:service xmi:id="_RIqqEF5WEe2VIMKZkc0vSw" name="InsertProfData">
+      <sca:interface.wsdl xmi:id="_RIqqEV5WEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(InsertProfData)"/>
+    </sca:service>
+    <sca:service xmi:id="_R8awUF5YEe2VIMKZkc0vSw" name="mainsystemresource">
+      <sca:interface.wsdl xmi:id="_R8awUV5YEe2VIMKZkc0vSw" interface="http://xmlns.example.com/20221104141015PLT#wsdl.interface(mainsystemresource)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
