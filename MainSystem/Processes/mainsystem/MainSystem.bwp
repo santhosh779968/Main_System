@@ -5293,7 +5293,9 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.6/@activity/@activity/@activities.0"/>
 
                                     <layoutConstraint
-                                    xsi:type="notation:Bounds" y="40"/>
+                                    height="40"
+                                    width="40"
+                                    xsi:type="notation:Bounds" y="63"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -5360,8 +5362,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.6/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint
-                                    x="41"
-                                    xsi:type="notation:Bounds" y="37"/>
+                                    x="48"
+                                    xsi:type="notation:Bounds" y="49"/>
                                     </children>
 
                                     <children type="4002">
@@ -5414,8 +5416,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.6/@activity/@activity/@activities.3"/>
 
                                     <layoutConstraint
-                                    x="154"
-                                    xsi:type="notation:Bounds" y="37"/>
+                                    x="164"
+                                    xsi:type="notation:Bounds" y="49"/>
                                     </children>
 
                                     <children type="4002">
@@ -5468,8 +5470,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.6/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint
-                                    x="282"
-                                    xsi:type="notation:Bounds" y="37"/>
+                                    x="299"
+                                    xsi:type="notation:Bounds" y="49"/>
                                     </children>
 
                                     <children type="4002">
@@ -5547,7 +5549,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.6/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="204"
+                                    height="210"
                                     width="669" xsi:type="notation:Bounds"/>
                                     </children>
 
