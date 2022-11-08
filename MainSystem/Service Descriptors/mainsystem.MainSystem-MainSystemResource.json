@@ -5,7 +5,7 @@
     "title" : "MainSystemResource",
     "description" : "MainSystemResource service"
   },
-  "host" : "localhost:8080",
+  "host" : "localhost:9001",
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {
