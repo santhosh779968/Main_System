@@ -7293,7 +7293,7 @@
                                     httpClientSR="httpClientResource1"
                                     httpMethod="POST"
                                     requestContentType="XML"
-                                    resourcePath="/insertinsurancedata"
+                                    resourcePath="/InsertInsuranceDetails"
                                     responseAcceptType="JSON" xsi:type="restjson:RestInvokeActivity"/>
                                     </properties>
                                     </activityConfig>
