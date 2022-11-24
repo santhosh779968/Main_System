@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_7rdSwGJUEe2iHriLdSLfkw" targetNamespace="http://tns.tibco.com/bw/composite/MainFrame" name="MainFrame" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_ajvOgGJVEe2iHriLdSLfkw" name="InsertEmployeeData" promote="ComponentMainFrame/InsertEmployeeData">
+    <sca:interface.wsdl xmi:id="_akBiYGJVEe2iHriLdSLfkw" interface="http://xmlns.example.com/20221112121156PLT#wsdl.interface(InsertEmployeeData)" scaext:wsdlLocation="../Processes/mainframe/MainFrame.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_akljEGJVEe2iHriLdSLfkw" name="RestService" path="/InsertEmployeeData" docBasePath="http://localhost:7777/MainFrame" docResourcePath="Resource" basePath="/" connector="commonHTTPconnection" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/mainframe.MainFrame-Resource.json">
+      <operation xmi:id="_ak4eAGJVEe2iHriLdSLfkw" operationName="post" nickname="post-InsertEmployeeData" httpMethod="POST" notes="postResource" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_aoUMgGJVEe2iHriLdSLfkw"/>
+      <advancedConfig xmi:id="_akvUEGJVEe2iHriLdSLfkw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_ak4eAWJVEe2iHriLdSLfkw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_8jOBMGJUEe2iHriLdSLfkw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8jUu4GJUEe2iHriLdSLfkw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8jaOcGJUEe2iHriLdSLfkw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8jg8IGJUEe2iHriLdSLfkw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8jrUMGJUEe2iHriLdSLfkw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8jtJYGJUEe2iHriLdSLfkw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8j4IgGJUEe2iHriLdSLfkw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8j_dQGJUEe2iHriLdSLfkw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_8kFj4GJUEe2iHriLdSLfkw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_GcS_IGJVEe2iHriLdSLfkw" name="ComponentMainFrame" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_GcS_IWJVEe2iHriLdSLfkw" processName="mainframe.MainFrame"/>
+    <sca:service xmi:id="_ajn5wGJVEe2iHriLdSLfkw" name="InsertEmployeeData">
+      <sca:interface.wsdl xmi:id="_ajn5wWJVEe2iHriLdSLfkw" interface="http://xmlns.example.com/20221112121156PLT#wsdl.interface(InsertEmployeeData)" scaext:wsdlLocation="../Processes/mainframe/MainFrame.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
