@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/MainFrame/Service Descriptors/mainframe.MainFrame-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/MianFrame"
+    },
+    {
+        "jsonSchemaLocation": "/MainFrame/Service Descriptors/mainframe.MainFrame-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.EmployeePOC.org/Insert_Employee_Data"
+    }
+]}

@@ -1,0 +1,115 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Resource",
+    "description" : "Resource service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/InsertEmployeeData" : {
+      "post" : {
+        "summary" : "postResource",
+        "description" : "postResource",
+        "operationId" : "post-InsertEmployeeData",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/InsertAllData"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Resposnse_Msg to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Resposnse_Msg"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Resposnse_Msg" : {
+      "type" : "object",
+      "required" : [ "Response" ],
+      "properties" : {
+        "Response" : {
+          "type" : "string"
+        },
+        "Correlation_ID" : {
+          "type" : "string"
+        }
+      }
+    },
+    "InsertAllData" : {
+      "type" : "object",
+      "required" : [ "CoverageDate", "EmailID", "Salary", "Designation", "HouseNumber", "Gender", "City", "Name", "PinCode", "Experience", "State", "Branch", "PhoneNumber", "Street", "OrganisationName", "DataChoice", "PolicyID" ],
+      "properties" : {
+        "Name" : {
+          "type" : "string",
+          "maxLength" : 100
+        },
+        "Gender" : {
+          "type" : "string"
+        },
+        "PhoneNumber" : {
+          "type" : "integer"
+        },
+        "EmailID" : {
+          "type" : "string"
+        },
+        "HouseNumber" : {
+          "type" : "string"
+        },
+        "Street" : {
+          "type" : "string"
+        },
+        "City" : {
+          "type" : "string"
+        },
+        "State" : {
+          "type" : "string"
+        },
+        "PinCode" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "PolicyID" : {
+          "type" : "string"
+        },
+        "CoverageDate" : {
+          "type" : "string"
+        },
+        "Salary" : {
+          "type" : "integer"
+        },
+        "OrganisationName" : {
+          "type" : "string"
+        },
+        "Branch" : {
+          "type" : "string"
+        },
+        "Designation" : {
+          "type" : "string"
+        },
+        "Experience" : {
+          "type" : "string"
+        },
+        "DataChoice" : {
+          "type" : "string"
+        },
+        "GeneratedID" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
